@@ -4,12 +4,17 @@ import "./style.css";
 import TodoList from './TodoList';
 import AddTodo from './AddTodo';
 
-const dummyTodos = ['Breakfast', 'HomeWork'];
+const dummyTodos = [];
 
 export default function App() {
+  
+  const getTodo = (todo) =>{
+    dummyTodos.push(todo);
+  }
+
   return (
     <div>
-      <AddTodo />
+      <AddTodo getInput={getTodo}/>
       <TodoList todos={dummyTodos}/>
     </div>
   );

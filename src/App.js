@@ -4,7 +4,7 @@ import "./style.css";
 import TodoList from './TodoList';
 import AddTodo from './AddTodo';
 
-const dummyTodos = ['BreakFast','homework'];
+const dummyTodos = ['BreakFast','Homework'];
 
 export default function App() {
   const [todos, setTodos] = useState(dummyTodos)
@@ -13,7 +13,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className='app'>
       <AddTodo getInput={getTodo}/>
       <TodoList todos={todos}/>
     </div>

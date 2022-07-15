@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import './style.css';
 
 function AddTodo(props){
   const [todo,setTodo] = useState('');
@@ -19,7 +20,9 @@ function AddTodo(props){
         onChange={handleInput} 
         value={todo}
       />
-      <button>Add</button>
+      <button className='submitButton'>
+        Add
+      </button>
     </form>
   )
 }

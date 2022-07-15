@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TodoCard from './TodoCard';
+import './style.css';
 
 function TodoList(props){
   return(

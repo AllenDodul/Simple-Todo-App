@@ -1,10 +1,12 @@
 import React from 'react';
 
-function TodoList(){
+import TodoCard from './TodoCard';
+
+function TodoList(props){
   return(
-    <div>
-      I'm from todo list
-    </div>
+    <ul>
+      <TodoCard todo={props.todos}/>
+    </ul>
   )
 }
 export default TodoList;
